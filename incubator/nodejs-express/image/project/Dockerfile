@@ -1,5 +1,5 @@
 # Install the app dependencies in a full Node docker image
-FROM node:10
+FROM ppc64le/node:10
 
 # Install OS updates
 RUN apt-get update \
