@@ -4,7 +4,7 @@ go:
   - 1.12.x
 
 os: 
-  - linux
+  - linux-ppc64le
  
 dist: bionic
 
