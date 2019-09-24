@@ -101,7 +101,7 @@ fi
 # image registry org for publishing stack
 if [ -z "$IMAGE_REGISTRY_ORG" ]
 then
-    export IMAGE_REGISTRY_ORG=appsody
+    export IMAGE_REGISTRY_ORG=KPatel1810
 fi
 
 if [ -z $GIT_BRANCH ]
@@ -117,14 +117,14 @@ then
     git_remote=${git_remote:-origin}
 
     git_remote_url=$(git remote get-url $git_remote)
-    git_remote_url=${git_remote_url:-https://github.com/appsody/stacks.git}
+    git_remote_url=${git_remote_url:-https://github.com/KPatel1810/stacks.git}
     git_remote_url=${git_remote_url#*:}
 
     git_repo=$(basename $git_remote_url .git)
     git_repo=${git_repo:-stacks}
 
     git_org=$(basename $(dirname $git_remote_url))
-    git_org=${git_org:-appsody}
+    git_org=${git_org:-KPatel1810}
 
     export GIT_ORG_REPO=$git_org/$git_repo
 fi
@@ -154,7 +154,7 @@ if [ -z "$INDEX_LIST" ]
 then
     for repo_name in $REPO_LIST
     do
-        INDEX_LIST+=("https://github.com/appsody/stacks/releases/latest/download/$repo_name-index.yaml")
+        INDEX_LIST+=("https://github.com/KPatel1810/stacks/releases/latest/download/$repo_name-index.yaml")
     done
     export INDEX_LIST=${INDEX_LIST[@]}
 fi
