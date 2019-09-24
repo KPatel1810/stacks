@@ -3,7 +3,10 @@ language: generic
 go:
   - 1.12.x
 
-os: linux
+os: 
+  - linux
+  - linux-ppc64le
+ 
 dist: bionic
 
 services:
