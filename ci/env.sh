@@ -124,7 +124,7 @@ then
     git_repo=${git_repo:-stacks}
 
     git_org=$(basename $(dirname $git_remote_url))
-    git_org=${git_org:-KPatel1810}
+    git_org=${git_org:-kpatel181}
 
     export GIT_ORG_REPO=$git_org/$git_repo
 fi
